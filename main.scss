@@ -146,6 +146,7 @@ body {
 .main {
   margin-top: 5rem;
   display: flex;
+  display: none;
   justify-content: space-between;
 
   &__container {

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Jost:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&family=Raleway:ital,wght@0,400;0,600;0,700;0,800;0,900;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo-box">
+          <span class="logo">purseBuy</span>
+        </div>
+        <div class="toggle-box">
+          <input
+            type="checkbox"
+            name="toggle"
+            id="toggle"
+            class="toggle__input"
+          />
+          <label class="toggle__label" for="toggle">&nbsp;</label>
+        </div>
+        <form class="form">
+          <div class="form__group">
+            <input class="form__input" type="text" name="" id="" />
+            <input
+              class="form__input"
+              type="password"
+              name=""
+              id="my-password"
+            />
+            <button class="form__btn">Login</button>
+            <button class="form__info">
+              Don't have account yet? Register now!
+            </button>
+          </div>
+        </form>
+        <form class="form-reg">
+          <div class="form-reg__group">
+            <label for="name">Name</label>
+            <input type="text" name="#" id="name" />
+          </div>
+          <div class="form-reg__group">
+            <span>Gender:</span>
+            <label for="name">Male</label>
+            <input type="radio" name="gender" id="male" />
+            <label for="name">Female</label>
+            <input type="radio" name="gender" id="female" />
+          </div>
+
+          <div class="form-reg__group">
+            <label for="name">Choose your school</label>
+            <select name="school" id="school">
+              <option value="oau">SELECT INSTITUTION:</option>
+              <optgroup label="Federal Universities">
+                <option value="oau">OBAFEMI AWOLOWO UNIVERSITY(OAU)</option>
+                <option value="ui">UNIVERSITY OF IBADAN(UI)</option>
+                <option value="uniben">UNIVERSITY OF BENIN(UNIBEN)</option>
+                <option value="oau">UNIVERSITY OF NIGERIA NSUKKA(UN)</option>
+                <option value="unilag">UNIVERSITY OF LAGOS(UNILAG)</option>
+              </optgroup>
+              <optgroup label="State Universities">
+                <option value="lasu">LAGOS STATE UNIVERSITY(LASU)</option>
+                <option value="esut">ENUGU STATE UNIVERSITY(ESUT)</option>
+              </optgroup>
+              <optgroup label="Private Universities">
+                <option value="CU">CONVENANT UNIVERSITY(CU)</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="form-reg__group">
+            <label for="name">password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-reg__group">
+            <label for="confirm-password">Confirm password</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+            />
+          </div>
+        </form>
+      </header>
+
+      <main class="main">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Dashboard</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Transaction</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Products</a>
+            </li>
+          </ul>
+
+          <div class="account">
+            <div class="image-box">
+              <span class="account__greeting"> Welcome back, </span>
+              <img src="" alt="" class="account__image" />
+              <h3 class="account__name">James</h3>
+            </div>
+            <a class="sign-out" href="#">
+              <span class="sign-out__logo"></span>
+              <span class="sign-word">sign-out</span>
+            </a>
+          </div>
+        </nav>
+        <div class="main__container">
+          <section class="dashboard">
+            <div class="balance">
+              <span class="balance__desc">my balance</span>
+              <h1 class="balance__amount">
+                23,456<span class="balance__amount--grayed-out">.87</span>
+                <span class="balance__amount--currency">NGN</span>
+              </h1>
+              <button class="balance__add">
+                ADD FUNDS
+                <span class="balance__logo"></span>
+              </button>
+            </div>
+
+            <div class="spending">
+              <span class="spending__word">Spendings</span>
+              <h2 class="spending__amount">#1,5000</h2>
+            </div>
+          </section>
+
+          <section class="transaction">
+            <h2 class="transaction__head">Last transactions</h2>
+            <ul class="transaction__list">
+              <li class="transaction__item">
+                <span class="transaction__name"> MilkShakes </span>
+                <span class="transaction__price">-#200</span>
+                <span class="transaction__place">Fork&forks</span>
+                <span class="transaction__time">11, Jan</span>
+              </li>
+              <li class="transaction__item">
+                <span class="transaction__name"> Rice </span>
+                <span class="transaction__price">-#1200</span>
+                <span class="transaction__place">Chicks</span>
+                <span class="transaction__time">15, Jan</span>
+              </li>
+              <li class="transaction__item">
+                <span class="transaction__name"> Trousers </span>
+                <span class="transaction__price">-#5200</span>
+                <span class="transaction__place">Ayo Clothes</span>
+                <span class="transaction__time">19, Dec</span>
+              </li>
+              <li class="transaction__item">
+                <span class="transaction__name"> MilkShakes </span>
+                <span class="transaction__price">-#200</span>
+                <span class="transaction__place">Fork&forks</span>
+                <span class="transaction__time">11, Jan</span>
+              </li>
+              <li class="transaction__item">
+                <span class="transaction__name"> MilkShakes </span>
+                <span class="transaction__price">-#200</span>
+                <span class="transaction__place">Fork&forks</span>
+                <span class="transaction__time">11, Jan</span>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>

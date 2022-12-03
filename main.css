@@ -1,0 +1,321 @@
+.header {
+  background-image: linear-gradient(to bottom left, rgb(83, 102, 103), rgb(83, 102, 103));
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  padding: 2rem;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  font-family: inherit;
+}
+
+.container {
+  position: relative;
+  max-width: 115rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  border-radius: 2rem;
+  padding: 2rem;
+  background-color: rgb(246, 246, 248);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+}
+
+.main {
+  position: relative;
+}
+
+.logo-box {
+  position: relative;
+  left: 5%;
+  top: 0;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: rgb(53, 133, 61);
+  background-color: #fff;
+  transform: translateX(-50%);
+  padding: 1rem;
+  border-radius: 2rem;
+  display: inline-block;
+  box-shadow: inset 0 0 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.dashboard {
+  background-color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.form-reg {
+  display: none;
+}
+
+.form {
+  height: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.form__info {
+  display: block;
+  border: 0;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: underline;
+  background-color: transparent;
+  color: gray;
+}
+.form__group {
+  padding: 2rem;
+  margin-top: -6rem;
+}
+.form__input {
+  width: 11rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  border: 0;
+  margin-right: 1rem;
+  border-radius: 2rem;
+}
+.form__btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+  font-family: inherit;
+  margin-left: 1rem;
+}
+
+.nav {
+  background-color: #fff;
+  font-size: 1.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 50rem;
+  border-radius: 2rem;
+  justify-content: space-between;
+}
+.nav__list {
+  list-style: none;
+}
+.nav__item {
+  margin-bottom: 2rem;
+}
+.nav__link {
+  text-decoration: none;
+  color: rgb(53, 133, 61);
+}
+
+.main {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.main__container {
+  background-color: #fff;
+  flex-basis: 85rem;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-radius: 2rem;
+  align-self: start;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard {
+  padding: 2rem;
+}
+
+.balance {
+  background-color: rgb(246, 246, 248);
+  padding: 4rem;
+  border-radius: 2rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.balance__desc {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.balance__amount {
+  font-size: 3rem;
+  color: rgb(53, 133, 61);
+  margin-bottom: 1rem;
+}
+.balance__amount--grayed-out {
+  opacity: 0.5;
+}
+.balance__amount--currency {
+  font-size: 1.5rem;
+  color: rgb(53, 133, 61);
+}
+.balance__add {
+  background-color: rgb(53, 133, 61);
+  border: none;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+}
+
+.spending {
+  background-color: rgb(246, 246, 248);
+  padding: 4rem;
+  border-radius: 2rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 6rem;
+}
+.spending__word {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.spending__amount {
+  color: red;
+  font-size: 3rem;
+}
+
+.transaction {
+  background-color: rgb(246, 246, 248);
+  padding: 2rem;
+  border-radius: 2rem;
+  width: 50rem;
+}
+.transaction__head {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1rem;
+  background-image: linear-gradient(to top left, rgb(53, 133, 61), rgb(246, 246, 248));
+  margin-bottom: 4rem;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.transaction__list {
+  font-size: 1.4rem;
+  list-style: none;
+}
+.transaction__item {
+  background-color: #fff;
+  padding: 1rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.transaction span {
+  position: relative;
+  padding: 1rem;
+}
+.transaction span:not(:last-child)::after {
+  content: "";
+  width: 0.2rem;
+  height: 90%;
+  background-color: rgb(246, 246, 248);
+  position: absolute;
+  top: 0;
+  right: -1rem;
+}
+.transaction__price {
+  color: red;
+}
+
+.account {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.3rem;
+}
+.account__name {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.sign-out {
+  margin-top: 3rem;
+}
+.sign-out:link, .sign-out:visited {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.7rem 0.7rem;
+  text-transform: uppercase;
+  color: rgb(53, 133, 61);
+}
+.sign-out:hover {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+}
+
+.toggle-box {
+  position: absolute;
+  left: 45%;
+  top: 5%;
+  transform: translateX(-50%);
+}
+
+.toggle__input {
+  visibility: hidden;
+}
+
+.toggle__label {
+  position: absolute;
+  width: 5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8), inset 0 0 0.5rem rgba(0, 0, 0, 0.6);
+  background-color: rgb(246, 246, 248);
+  height: 2rem;
+  border-radius: 2rem;
+}
+.toggle__label::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translate(0, -50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.toggle__input:checked + .toggle__label::after {
+  background-color: rgb(72, 72, 72);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.7);
+  left: 60%;
+}
+
+.dark-mode {
+  background-color: rgb(52, 51, 59);
+  color: rgb(53, 133, 61);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode-no-shadow {
+  background-color: rgba(71, 80, 88, 0.999);
+  color: rgb(53, 133, 61);
+  border-radius: 2rem;
+}/*# sourceMappingURL=main.css.map */

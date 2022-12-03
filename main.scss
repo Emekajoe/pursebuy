@@ -1,0 +1,352 @@
+// color variables
+$color-primary: rgb(53, 133, 61);
+$color-secondary: rgb(246, 246, 248);
+
+// other variables
+$padding-big: 8rem;
+$padding-medium: 4rem;
+$padding-small: 2rem;
+$padding-extra-small: 1rem;
+
+//variable for bradius
+$b-radius-normal: 2rem;
+
+.header {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(83, 102, 103),
+    rgb(83, 102, 103)
+  );
+  border-top-right-radius: $b-radius-normal;
+  border-top-left-radius: $b-radius-normal;
+  padding: $padding-small;
+}
+
+* {
+  &,
+  &::before,
+  &::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  font-family: inherit;
+}
+
+.container {
+  position: relative;
+  max-width: 115rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  border-radius: 2rem;
+  padding: $padding-small;
+  background-color: $color-secondary;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+}
+.main {
+  position: relative;
+}
+.logo-box {
+  position: relative;
+  left: 5%;
+  top: 0;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: $color-primary;
+  background-color: #fff;
+  transform: translateX(-50%);
+  padding: $padding-extra-small;
+  border-radius: $b-radius-normal;
+  display: inline-block;
+  box-shadow: inset 0 0 0.2rem rgba(0, 0, 0, 0.2);
+}
+.logo {
+}
+
+.dashboard {
+  background-color: #fff;
+  width: fit-content;
+}
+
+.form-reg {
+  display: none;
+}
+
+.form {
+  height: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  //   margin: 4rem 0;
+
+  &__info {
+    display: block;
+    border: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: underline;
+    background-color: transparent;
+    color: gray;
+  }
+
+  &__group {
+    padding: $padding-small;
+    margin-top: -6rem;
+  }
+  &__input {
+    width: 11rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    border: 0;
+    margin-right: 1rem;
+    border-radius: $b-radius-normal;
+  }
+  &__btn {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    border-radius: $b-radius-normal;
+    font-family: inherit;
+    margin-left: 1rem;
+  }
+}
+
+.nav {
+  background-color: #fff;
+  font-size: 1.5rem;
+  width: fit-content;
+  padding: $b-radius-normal;
+
+  display: flex;
+  flex-direction: column;
+  height: 50rem;
+  border-radius: $b-radius-normal;
+  justify-content: space-between;
+
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    margin-bottom: 2rem;
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-primary;
+  }
+}
+.main {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__container {
+    background-color: #fff;
+    flex-basis: 85rem;
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.1);
+    padding: $b-radius-normal;
+    border-radius: $b-radius-normal;
+    align-self: start;
+
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.dashboard {
+  padding: $padding-small;
+}
+.balance {
+  background-color: $color-secondary;
+  padding: $padding-medium;
+  border-radius: $b-radius-normal;
+  color: rgba(0, 0, 0, 0.6);
+  &__desc {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  &__amount {
+    font-size: 3rem;
+    color: $color-primary;
+    margin-bottom: 1rem;
+
+    &--grayed-out {
+      opacity: 0.5;
+    }
+    &--currency {
+      font-size: 1.5rem;
+      color: $color-primary;
+    }
+  }
+  &__add {
+    background-color: $color-primary;
+    border: none;
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    border-radius: $b-radius-normal;
+  }
+}
+
+.spending {
+  background-color: $color-secondary;
+  padding: $padding-medium;
+  border-radius: $b-radius-normal;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 6rem;
+  &__word {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  &__amount {
+    color: red;
+    font-size: 3rem;
+  }
+}
+
+.transaction {
+  background-color: $color-secondary;
+  padding: $padding-small;
+  border-radius: $b-radius-normal;
+  width: 50rem;
+
+  &__head {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: $padding-extra-small;
+    background-image: linear-gradient(
+      to top left,
+      $color-primary,
+      $color-secondary
+    );
+    margin-bottom: 4rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  &__list {
+    font-size: 1.4rem;
+    list-style: none;
+  }
+  &__item {
+    background-color: #fff;
+    padding: 1rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.1);
+    border-radius: $b-radius-normal;
+    display: flex;
+    justify-content: space-between;
+  }
+  span {
+    position: relative;
+    padding: 1rem;
+
+    &:not(:last-child)::after {
+      content: "";
+      width: 0.2rem;
+      height: 90%;
+      background-color: $color-secondary;
+      position: absolute;
+      top: 0;
+      right: -1rem;
+    }
+  }
+  &__price {
+    color: red;
+  }
+}
+
+.account {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.3rem;
+
+  &__name {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.sign-out {
+  margin-top: 3rem;
+  //   background-color: green;
+  &:link,
+  &:visited {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.7rem 0.7rem;
+    text-transform: uppercase;
+    color: $color-primary;
+  }
+  &:hover {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    border-radius: $b-radius-normal;
+  }
+}
+
+.toggle-box {
+  position: absolute;
+  left: 45%;
+  top: 5%;
+  transform: translateX(-50%);
+}
+.toggle__input {
+  visibility: hidden;
+}
+
+.toggle__label {
+  position: absolute;
+  width: 5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8), inset 0 0 0.5rem rgba(0, 0, 0, 0.6);
+  background-color: $color-secondary;
+  height: 2rem;
+  border-radius: $b-radius-normal;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    border-radius: 50%;
+    transform: translate(0, -50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+  }
+}
+
+.toggle__input:checked + .toggle__label::after {
+  background-color: rgb(72, 72, 72);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.7);
+  left: 60%;
+}
+
+.dark-mode {
+  background-color: rgb(52, 51, 59);
+  color: $color-primary;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+.dark-mode-no-shadow {
+  background-color: rgba(71, 80, 88, 0.999);
+  color: $color-primary;
+  border-radius: $b-radius-normal;
+}
